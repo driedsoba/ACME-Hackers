@@ -1,4 +1,4 @@
-<Activity mc:Ignorable="sap sap2010" x:Class="Main" VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="816,664.8" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<Activity mc:Ignorable="sap sap2010" x:Class="Main" VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="816,462.4" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
   <TextExpression.NamespacesForImplementation>
     <sco:Collection x:TypeArguments="x:String">
       <x:String>System.Activities</x:String>
@@ -83,35 +83,11 @@
       <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="Main Sequence" sap:VirtualizedContainerService.HintSize="545.6,600" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="Main Sequence" sap:VirtualizedContainerService.HintSize="449.6,104.8" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Browser Chrome: driedsoba (Liw Jun Le)" sap:VirtualizedContainerService.HintSize="483.2,488" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" ScopeGuid="cae8176e-e634-42fd-bcaf-16bbb5e95ae7" Version="V2">
-      <uix:NApplicationCard.Body>
-        <ActivityAction x:TypeArguments="x:Object">
-          <ActivityAction.Argument>
-            <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
-          </ActivityAction.Argument>
-          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="449.6,271.2" sap2010:WorkflowViewState.IdRef="Sequence_2">
-            <sap:WorkflowViewStateService.ViewState>
-              <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-              </scg:Dictionary>
-            </sap:WorkflowViewStateService.ViewState>
-            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'ACME-Hackers'" sap:VirtualizedContainerService.HintSize="387.2,157.6" sap2010:WorkflowViewState.IdRef="NClick_1" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="cae8176e-e634-42fd-bcaf-16bbb5e95ae7" Version="V3">
-              <uix:NClick.Target>
-                <uix:TargetAnchorable BrowserURL="https://github.com/driedsoba?tab=repositories" CvTextArea="595, 483, 171, 23" CvTextArgument="ACME-Hackers" CvType="Text" DesignTimeRectangle="599, 478, 167, 33" DesignTimeScaleFactor="1.25" ElementType="Text" FriendlyName="'ACME-Hackers'" FullSelectorArgument="&lt;webctrl parentid='user-repositories-list' tag='A' /&gt;" FuzzySelectorArgument="&lt;webctrl parentid='user-repositories-list' tag='A' type='' class='' aaname='         ACME-Hackers' check:innerText='ACME-Hackers' /&gt;" Guid="6942b033-e956-4d49-8db4-7155337c49da" InformativeScreenshot="2522dcbe8aa9195630dfa2f8007141fc.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='driedsoba (Liw Jun Le)' /&gt;" SearchSteps="FuzzySelector, CV" Version="V2" Visibility="Interactive" />
-              </uix:NClick.Target>
-            </uix:NClick>
-          </Sequence>
-        </ActivityAction>
-      </uix:NApplicationCard.Body>
-      <uix:NApplicationCard.TargetApp>
-        <uix:TargetApp Area="-9, -9, 1938, 1098" BrowserType="Chrome" IconBase64="iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAANcSURBVFhHtVdLa1NBGI1vF75l5t48GmNNDRjQRXAfBBE3LoRuREFd6MadxY0gMT9AfAVX7sU/oLsquKiCqF0IRRAfUBdaNa1Ci7XxnOl3Y3LzJb3mxgOHJN/jfHe+mbkzSURFsVhcn7T2iG9tzTdmHJzyrJ0j+d3Z4GMMYyUtPnLG+BC+4xlTBxsRWWcOc0Xm35HP5zdApAr+UApEInOpQS2RjQYZ9YQm2g+pFbkbGWv3Yz4/akJxSE1qSxkdbuT/oXhAanfthMx5W9uR8Bq8B/uXVntEfkPuffB5q5011DUBR7U1kEx63jn6yuXyWs/zzmLLfXK+5e03CfHH4CN8fwX7d/qgMwPbhWArYlseD/QCshZ9Tcii61jtvu8flBCHojGbYNtXqVRWi6mJRqOxKp1O781ms9vF5IAH392hi1ptUwED93lbEJlMJksS0jdSqVRW02ZNF8BWwaC+ZNC+Uy4oBtCxo5o2WHfTxFen4nRtQgd2iU7fwLTshNZnrQZrs/01zQn7JdGIDSzKM11q1Ogc15yZTGZE8mMjl8tt02qwNh9gqsOB9nNVS/5AAM33HXVQO+H2dNhh7VvJGxhQ7Fm4DmvzyX52OIyZlbyBgYMK12FttTWOnmclNzawBjaizny4Bmzv+ABPww4SW+Sk5MdGj60+kUgac0N1Ys4GtRBR6IFWg7XVwyIgEsdEo29gIKc1bZK1E4VCYTN+zIadwiU8RLVUKq0TvcjggcUBQGMxpBlwloebC0bg7abD2mspzzshR6yzYRQfEFNJWXsYL6gdLknB8PDwVizeQzjGLyP/TVNToe95tyQN1zBj8iiw4BzGfGUhPh1EXoQTYXuiHccEctW3apioNT9k7R5JWwaMV1uC6jhEMNjMCOxtBwm6c0xSOoCTr9wa243spqT8Ba9JobbfpV0uKxdhu84bUq8rNqcnyO9K1OiqgcvDEIKmJXiRZ7m4IgN5vyRf4zRrSKiOtLUHGCgJixj9Q3AMW+Y8Pq+Mjo6ukVAVzJHcMKepLWG9wflHq14qIo2V/vch5nc4B1qTvJpJSDTINb0Ctr3D+V6XEBWIWQpikbsAVlfK6QluF+zZmxCsYyRzvKKLSwUKzjAOn7VBXmrclTx85dbA6UP3tsjPFZBI/AF57FPSbdtFuAAAAABJRU5ErkJggg==" InformativeScreenshot="a29d2817ec60bb67a12c136ccdb3396b.jpg" Selector="&lt;html app='chrome.exe' title='driedsoba (Liw Jun Le)' /&gt;" Title="driedsoba (Liw Jun Le)" Url="https://github.com/driedsoba?tab=repositories" />
-      </uix:NApplicationCard.TargetApp>
-    </uix:NApplicationCard>
   </Sequence>
 </Activity>
